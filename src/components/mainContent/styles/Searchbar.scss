@@ -1,0 +1,130 @@
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  .cartIcon {
+    display: flex;
+    gap: 0.2em;
+    align-items: center;
+
+    .count {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 100px;
+      background: rgb(175, 175, 19);
+      color: white;
+      padding: 0.5em;
+      height: 0.5rem;
+      width: 0.5rem;
+      text-align: center;
+      font-weight: 700;
+    }
+  }
+  .cartIcon:hover {
+    transform: scale(1.2);
+  }
+}
+
+.searchbar {
+  width: 100%;
+  width: fit-content;
+  position: relative;
+  padding: 2em 0;
+  .search-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 0.2em;
+  }
+
+  input {
+    padding: 0.6em;
+    border-radius: 5px;
+    width: 60ch;
+    border: none;
+    outline: none;
+    background: #ffffff;
+    border: 1px solid rgb(228, 219, 219);
+    padding-left: 3em;
+    font-size: 1rem;
+    font-family: "Signika", sans-serif;
+    font-weight: 500;
+
+    &::placeholder {
+      opacity: 0.8;
+    }
+  }
+
+  input:focus {
+    background: #e4e4e2;
+  }
+}
+
+.search-results {
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  top: 100%;
+  background: white;
+  width: 80%;
+  padding: 1em 0.5em;
+  text-align: center;
+  z-index: 10;
+  color: maroon;
+  height: 70vh;
+  overflow-y: scroll;
+
+  h4 {
+    text-align: right;
+    color: rgb(230, 105, 105);
+    display: flex;
+    align-items: center;
+  }
+
+  h4:hover,
+  h4:active {
+    background: #e4e4e2;
+  }
+}
+
+.search-results::-webkit-scrollbar {
+  width: 1px;
+  // background: red;
+}
+
+@media (max-width: 850px) and (min-width: 450px) {
+  .search {
+    flex-direction: column;
+    .searchbar {
+      width: 70%;
+
+      input {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .search {
+    box-sizing: border-box;
+    width: 100%;
+    justify-content: stretch;
+    gap: 4em;
+    padding: 0.8em;
+    gap: 0.5em;
+  }
+
+  .searchbar {
+    flex: 1;
+    // width: 80%;
+    padding: 0;
+
+    input {
+      width: max-content;
+      width: 100%;
+    }
+  }
+}

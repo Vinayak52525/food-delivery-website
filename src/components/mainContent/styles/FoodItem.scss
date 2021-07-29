@@ -1,0 +1,33 @@
+.fooditem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3em;
+  border-radius: 20px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  background: rgb(241, 240, 240);
+  padding: 2em 0;
+  width: 15rem;
+  font-family: "Signika", sans-serif;
+  cursor: pointer;
+
+  div {
+    width: 100%;
+  }
+  img {
+    width: 100%;
+  }
+
+  h4 {
+    color: #c34a36;
+  }
+
+  h2 {
+    color: #c34a36;
+  }
+
+  &:hover {
+    background: white;
+  }
+}

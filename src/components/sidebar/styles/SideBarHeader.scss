@@ -1,0 +1,39 @@
+.top-logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.2em;
+
+  .menu-icon {
+    display: none;
+  }
+}
+
+.sidebar_header {
+  display: flex;
+  align-items: center;
+  flex: 0.2;
+  margin-bottom: 0;
+  .logo {
+    color: red;
+    margin-right: 0.2em;
+    font-size: 1.6em !important;
+    padding: 0.3em 0.4em;
+    border-radius: 15px;
+    background: #f8f8f7;
+  }
+  h1 {
+    font-size: 1.6rem;
+  }
+  span {
+    color: red;
+  }
+}
+
+@media (max-width: 450px) {
+  .top-logo {
+    .menu-icon {
+      display: block;
+    }
+  }
+}

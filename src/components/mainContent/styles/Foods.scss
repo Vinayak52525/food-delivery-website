@@ -1,0 +1,24 @@
+.foods {
+  margin-left: 1em;
+  height: 85%;
+  overflow-y: scroll;
+
+  .foods-header {
+    display: flex;
+    align-items: center;
+    gap: 0.3em;
+  }
+
+  .food-items {
+    margin-top: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: space-evenly;
+  }
+
+  h1 {
+    font-family: "Signika", sans-serif;
+    color: red;
+  }
+}

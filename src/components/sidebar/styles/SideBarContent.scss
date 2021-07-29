@@ -1,0 +1,29 @@
+.sidebar__contents--content {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  color: #3d3a3a;
+  font-family: "Signika", sans-serif;
+  font-weight: 700;
+  justify-content: flex-start;
+  width: 70%;
+
+  .icon {
+    color: rgb(212, 94, 94) !important;
+  }
+
+  & * {
+    padding: 0.5em 0.4em;
+  }
+
+  &:hover {
+    background: #ffca40;
+    border-radius: 9px;
+    cursor: pointer;
+  }
+}
+
+.active {
+  background: #ffca40;
+  border-radius: 9px;
+}

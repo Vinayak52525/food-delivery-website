@@ -1,0 +1,13 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  flex: 0.18;
+  padding: 1.5em 1em;
+  border-right: 1px solid rgb(175, 173, 173);
+}
+
+@media (max-width: 450px) {
+  .sidebar {
+    border-right: none;
+  }
+}
